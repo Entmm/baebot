@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite; /* Adjust duration for slower/faster pulse */
+}
+
+
+.grain-effect {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/5/5d/Grain_texture.png') repeat;
+  opacity: 0.2; /* Adjust opacity for visibility */
+  pointer-events: none; /* Ensure it doesn't interfere with interaction */
+}
+
+@keyframes grain {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.grain-effect {
+  animation: grain 15s linear infinite; /* Adjust the duration for speed */
+}
+
