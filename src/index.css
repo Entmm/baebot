@@ -16,22 +16,3 @@
 }
 
 
-.grain-effect {
-  background: url('https://upload.wikimedia.org/wikipedia/commons/5/5d/Grain_texture.png') repeat;
-  opacity: 0.2; /* Adjust opacity for visibility */
-  pointer-events: none; /* Ensure it doesn't interfere with interaction */
-}
-
-@keyframes grain {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
-.grain-effect {
-  animation: grain 15s linear infinite; /* Adjust the duration for speed */
-}
-

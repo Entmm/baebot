@@ -15,7 +15,6 @@ function App() {
       <KeyFeatures />
       <Benefits />
       <Roadmap />
-      
       <Footer />
     </div>
   );
